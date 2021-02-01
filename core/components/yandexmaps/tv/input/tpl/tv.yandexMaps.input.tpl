@@ -177,6 +177,7 @@ Ext.onReady(function(){
 		
 		
 		// >> Слушаем клик на подсказках в поиске
+		var suggestView = new ymaps.SuggestView('suggest', {results:9});
 		suggestView.events.add('select', function (e) {
 			var address = e.get('item').value;
 			//console.log( address );
